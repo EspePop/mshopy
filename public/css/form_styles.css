@@ -1,0 +1,35 @@
+#sec4 div {
+    background-color: #edf6f9;
+}
+
+fieldset {
+    border: thin solid #006d77;
+    background-color: #e5f2f7;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+input,
+select {
+    width: 400px;
+    height: 20px;
+}
+
+input,
+textarea,
+select,
+#fielcontainer {
+    border: thin solid #83c5be;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #999;
+}
+
+#button {
+    width: 140px;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #e5f2f7;
+    box-shadow: 1px 1px 2px #999;
+}

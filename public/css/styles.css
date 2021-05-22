@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/fondo_ukes.png);
+}
+
+.container {
+    width: 95%;
+    color: #201917;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: Century Gothic;
+}
+
+/* HEADER */
+.header-container{
+    float: left;
+    width: 100%;
+    height: 120px;
+    margin: 60px auto 5px auto;
+}
+
+.header{
+    height: 100px;
+    margin-top: 10px;
+    padding-top: 20px;
+    background-color: #e29578;
+    text-align: center;
+    text-shadow:1px 1px 0 #439ea7;
+    color:  rgb(255, 250, 190);
+    font-size: 30px;
+    border-radius: 45%;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 2px 2px 5px #999;
+}
+
+/* NAVBAR */
+.nav {
+    float: inherit;
+    position: fixed;
+    width: 95%;
+    padding-left: 10px;
+    background-color: #83c5be;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.navbar-items{
+    color: black;
+    margin: auto;
+    padding: 10px;
+}
+
+.home {
+    height: 40px;
+    margin-top: 3px;
+}
+
+.home:hover{
+    background-color: burlywood;
+    border-radius: 50%;
+}
+
+.dropdown-menu{
+    width: auto;
+}
+
+
+/* IR A INICIO */
+#arrowUp {
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    bottom: 1px;
+    right: 10px;
+    background-color: transparent;
+}
+
+#arrowUp:hover {
+    background-color:#83c5be;
+    border-radius: 60%;
+}
+
+/* HOVER */
+a {
+    color: #006d77;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #201917;
+    font-weight: bold;
+    text-decoration: none;   
+
+}
+
+/* CONTENIDO */
+.sec1 {
+    background-color: #edf6f9;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.sec2 {
+    width: 100%;
+    background-color: #e5f2f7;
+    text-align: center;
+    padding: 40px;
+}
+
+.sec3 {
+    margin: auto;
+    width: 50%;
+    
+}
+
+.sec4{
+   margin: 20px auto;
+}
+
+.card-img-top{
+    width: 40%;
+    border-radius: 100px;
+}
+
+.list{
+    text-align: center;
+}
+
+.img_song {
+    float: right;
+    width: 300px;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 2px;
+}
+
+.video_song {
+    width: 100%;
+    height: 280px;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 2px;
+}
+
+
+
+/* FOOTER */
+.footer {
+    float: right;
+    width: 100%;
+    height: 40px;
+    background-color: #e29578;
+}
+
+.redes {
+    float: right;
+    margin-right: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+
+.redes a:hover {
+    background-color: rgb(253, 249, 197);
+}

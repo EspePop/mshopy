@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/fondo_ukes.png);
+}
+
+.container{
+    background-color: #edf6f9;
+    width: 90%;
+    color: #201917;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: Century Gothic;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 250, 190);
+    background-color: #f29578;
+    text-shadow: 1px 1px 1px #83c5be;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.sec1 {
+    color: #201917;
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* NAVBAR */
+.stage{
+    margin: auto;
+    height: 300px;
+    width: 50%;
+    text-align: right;
+}
+
+.a{
+    color: black;
+}
+
+.a:hover{
+    text-decoration: none;
+}
+
+.p{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    background-color: #83c5be;
+    border-radius: 10px;
+    font-family: Century Gothic;
+    letter-spacing: 1px;
+    height: 40px;
+}
+
+.div{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.2s;
+  
+}
+
+.p:hover{
+    background: rgb(253, 249, 197);
+    color: black;
+}
+
+.div:nth-child(odd){
+    transform: perspective(300px) rotateY(45deg);
+    box-shadow: -2px 2px 7px gray;
+}
+
+.div:nth-child(even){
+    transform: perspective(300px) rotateY(-45deg);
+    box-shadow: 2px 2px 7px gray;
+}
+
+.div:hover{
+    transform: rotateY(0);
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 0px;
+}
+
+/* IR ARRIBA */
+#arrowUp {
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    bottom: 1px;
+    right: 10px;
+    background-color: transparent;
+}
+
+#arrowUp:hover {
+    background-color: #85DA93;
+    border-radius: 60%;
+    padding-left: 5px;
+}
+
+/* MENU WEB */
+.boxes{
+    width: 70%;
+    height: 280px;
+    margin: 20px auto;
+    background-color: #e5f2f7;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: 1px 1px 6px #aaa;
+}
+
+.boxes:hover {
+    color: #83c5be;
+    font-weight: bold;
+}
+
+ /* CONTACTO */
+.contact {
+    width: 70%;
+    margin: auto;
+    height: max-content;
+    background-color: #e5f2f7;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    float: right;
+    width: 100%;
+    height: 40px;
+    background-color: #e29578;
+}
+
+.redes {
+    float: right;
+    margin-right: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+
+.redes a:hover {
+    background-color: rgb(253, 249, 197);
+}
+
+/* HOVER */
+a{
+    color: #006d77;
+}
+
+a:hover{
+    color: #201917;
+    font-weight: bold; 
+    text-decoration: none;   
+}

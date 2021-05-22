@@ -1,0 +1,194 @@
+<html>
+ <head>
+    <style>
+        #contenedor{
+            background-color: turquoise;
+            width: 300px;
+            height: 200px;
+            float: right;
+        }
+
+        .acordes{
+    width: 40%;
+}
+
+.box{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.contenedor{
+    width: 90px;
+    height: 110px;
+    margin: 5px;
+    padding: auto;
+    border: solid 1px #1c4051;
+    background-color: #e2f2f7;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+    </style>
+ </head>
+ <body>
+
+    <div class="row">
+        <div class="sec1">
+            <h4>Lleva cada imagen a su correspondiente acorde</h4>
+            <div class="row">                        
+                <div class="acordes" id="acordes">
+                    <span class="chords" id="si" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game/B.png" id="si" alt="">
+                    </span>
+                    <span class="chords" id="re" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//D.png" id="re" alt="">
+                    </span>
+                    <span class="chords" id="fa" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//F.png" id="fa" alt="">
+                    </span>
+                    <span class="chords" id="mib" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//Eb.png" id="mib" alt="">
+                    </span>
+                    <br/>
+                    <span class="chords" id="solb" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//Gb.png" id="solb" alt="">
+                    </span>
+                    <span class="chords" id="mi" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//E.png" id="mi" alt="">
+                    </span>
+                    <span class="chords" id="sol" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//G.png" id="sol" alt="">
+                    </span>
+                    <span class="chords" id="lab" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//Ab.png" id="lab" alt="">
+                    </span><br/>
+                    <span class="chords" id="do" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game/C.png" id="do" alt="">
+                    </span>
+                    <span class="chords" id="la" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//A.png" id="la" alt="">
+                    </span>
+                    <span class="chords" id="reb" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//Db.png" id="reb" alt="">
+                    </span>
+                    <span class="chords" id="sib" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                        <img src="public/img_game//Bb.png" id="sib" alt="">
+                    </span>
+                </div>
+
+                <div class="box row sec6" id="box">                            
+                    <div id="db" class="contenedor" ondragover="over(event)" ondrop="drop(event)">C# / Db</div>
+                    <div id="g" class="contenedor" ondragover="over(event)" ondrop="drop(event)">G</div>
+                    <div id="e" class="contenedor" ondragover="over(event)" ondrop="drop(event)">E</div>
+                    <div id="ab" class="contenedor" ondragover="over(event)" ondrop="drop(event)">G# / Ab</div>
+                    <div id="b" class="contenedor" ondragover="over(event)" ondrop="drop(event)">B</div>
+                    <div id="eb" class="contenedor" ondragover="over(event)" ondrop="drop(event)">D# / Eb</div>
+                    <div id="c" class="contenedor" ondragover="over(event)" ondrop="drop(event)">C</div>
+                    <div id="gb" class="contenedor" ondragover="over(event)" ondrop="drop(event)">F# / Gb</div>
+                    <div id="a" class="contenedor" ondragover="over(event)" ondrop="drop(event)">A</div>
+                    <div id="bb" class="contenedor" ondragover="over(event)" ondrop="drop(event)">Bb</div>
+                    <div id="f" class="contenedor" ondragover="over(event)" ondrop="drop(event)">F</div>
+                    <div id="d" class="contenedor" ondragover="over(event)" ondrop="drop(event)">D</div>
+                </div>
+            </div>
+
+
+        </div>
+
+    <!-- https://developer.mozilla.org/es/docs/Web/API/Touch_events -->
+
+
+    <!-- <div id="arrastra" draggable="true">
+        Elemento a arrastrar
+    </div>
+
+    <div id="contenedor" ></div> -->
+
+
+
+    <script type="text/javascript">
+        var el = document.getElementById('acordes'); 
+
+        el.addEventListener("touchstart", handleStart, false);
+        el.addEventListener("touchend", handleEnd, false);
+        el.addEventListener("touchcancel", handleCancel, false);
+        el.addEventListener("touchleave", handleLeave, false);
+        el.addEventListener("touchmove", handleMove, false);
+
+        function handleStart(event) {
+            event.target.style.opacity = '0.3';
+        }
+
+        function start(event) {
+            event.target.style.opacity = '0.3';
+            event.dataTransfer.setData('acorde', event.target.id);
+            event.dataTransfer.effectAllowed = 'move';
+        }
+
+        
+
+        function handleCancel(event) {        
+        }
+
+        function handleLeave(event) {
+            event.target.style.border = "none";
+            
+        }
+
+        function handleMove(event) {
+            document.getElementById("box").style.border = "5px solid #aaa";
+            // Cancelar el evento
+            event.preventDefault();
+        }  
+
+        function over(event) {
+            event.preventDefault();
+            event.dataTransfer.dropEffect = 'move';
+            return false;
+        }
+
+        function handleEnd(event) {
+            console.log(event.target.id);
+            document.getElementById("box").appendChild(document.getElementById("arrastra"));
+            document.getElementById("box").style.border = "none";
+
+            event.target.style.opacity = '1';
+        }
+
+        function end(event) {
+            event.target.style.opacity = '';
+        }
+        var chordsMap = {
+            'c': 'do',
+            'db': 'reb',
+            'd': 're',
+            'eb': 'mib',
+            'e': 'mi',
+            'f': 'fa',
+            'gb': 'solb',
+            'g': 'sol',
+            'ab': 'lab',
+            'a': 'la',
+            'bb': 'sib',
+            'b': 'si'
+        }
+
+        function drop(event) {
+            var acorde = event.dataTransfer.getData('acorde');
+            var recibe = event.currentTarget.id;
+        
+            if (chordsMap[recibe] === acorde) {
+                var acordeElement = document.getElementById(acorde);
+                acordeElement.style.opacity = '1';
+                event.target.appendChild(acordeElement);
+            
+            } else {
+                window.alert("Oh-oh... ¡este no es su acorde!");
+            }
+            // window.alert("¡Felicidades! Lo has hecho fenomenal")
+        }
+            </script>
+    </body>
+        </html>

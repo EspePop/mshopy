@@ -1,0 +1,21 @@
+.acordes{
+    width: 40%;
+}
+
+.box{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.contenedor{
+    width: 90px;
+    height: 110px;
+    margin: 5px;
+    padding: auto;
+    border: solid 1px #1c4051;
+    background-color: #e2f2f7;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+

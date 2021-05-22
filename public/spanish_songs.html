@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CANCIONERO ESPAÑOL</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">            
+    </head>
+    <body>
+        <div class="container">
+            <a id="up"></a>
+            <div class="row">
+                <div class="nav col-lg-11">
+                    <nav class="navbar-expand-lg">
+                        <div class="navbar-items">
+                            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <a href="index.html"><img class="navbar-brand home" src="images/home.png" alt="Inicio" title="inicio" /></a>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="chords.html">Acordes</a>
+                                    </li>                                
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Cancioneros
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="spanish_songs.html">Cancionero Español</a>
+                                            <a class="dropdown-item" href="fito.html">Cancionero Fito</a>
+                                            <a class="dropdown-item" href="mclan.html">Cancionero M-Clan</a>
+                                            <a class="dropdown-item" href="english_songs.html">Cancionero Inglés</a>
+                                            <a class="dropdown-item" href="adele.html">Cancionero Adele</a>
+                                            <a class="dropdown-item" href="amy.html">Cancionero Amy</a>
+                                            <a class="dropdown-item" href="infantiles.html">Cancionero Infantil</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="game.html">¿Jugamos?</a>
+                                    </li>        
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Peticiones
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="mailto:missyhope82@gmail.com?&subject=Una duda..." title="missyhope82@gmail.com">
+                                                missyhope82@gmail.com
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-container">
+                <div class="header navbar-expand-lg">
+                    CANCIONES PARA UKELELE by <span>@ms.hopy</span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="arrowUp">
+                    <a href="#up">
+                        <box-icon type='solid' name='hand-up'>
+                            <img src="images/arrowUp.png" alt="up" title="arriba" />
+                        </box-icon>
+                    </a>
+                </div>    
+                <div class="sec2">                           
+                    <h1>CANCIONEROS</h1>
+                    <h5>by @ms.hopy</h5>
+                    <div>
+                        <br/>
+                        ¡¡Pincha en la canción para descargarla!!
+                    </div>   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="sec1">
+                    <h3>Cancionero en español</h3>
+                    <br/>
+                    <ul class="list-unstyled">
+                        <li> <a href="#diver">¡Qué divertido! - Fito & Fitipaldis</a> </li>
+                        <li> <a href="#carmin">Alquitrán y carmín - El niño de la hipoteca</a> </li>
+                        <li> <a href="#vias">Cerca de las vías - Fito & Fitipaldis</a> </li>
+                        <li> <a href="#mirada">Con sólo una mirada - Georgina </a></li>
+                        <li> <a href="#concierto">Concierto Salvaje - MClan </a> </li>
+                        <li> <a href="#oxidado">Corazón oxidado - Fito & Fitipaldis</a> </li>
+                        <li> <a href="#calma">La calma - MClan </a> </li>
+                        <li> <a href="#revo">La revolución sexual - La casa azul</a> </li>
+                        <li> <a href="#calles">Las calles están ardiendo - MClan </a> </li>
+                        <li> <a href="#chillon">Las cosas que nunca te dije - Mundo Chillón</a> </li>
+                        <li> <a href="#nubes">Las nubes de tu pelo - Fito & Fitipaldis</a> </li>
+                        <li> <a href="#loca">Loca - Luz Casal</a> </li>
+                        <li> <a href="#vaya">Ojalá que me vaya bonito - La otra cover</a> </li>
+                        <li> <a href="#pausa">Pausa - Izal</a> </li>
+                        <li> <a href="#ruido">Ruido -Joaquín Sabina</a> </li>
+                        <li> <a href="#vega">Se dejaba llevar por ti - Antonio Vega</a> </li>
+                        <li> <a href="#quemo">Se quemó - La Otra</a> </li>
+                        <li> <a href="#sonar">Soñar contigo - Zenet (Ms.Hopy cover)</a> </li>
+                        <li> <a href="#souvenir">Souvenir - MClan</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>¡Qué divertido!</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd" 
+                                target="_blank">Video Youtube</a>
+                            </div>
+                            <br />             
+                            <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b> Artista:</b> Fito & Fitipaldis</li>
+                                <li><b> Álbum:</b> A puerta cerrada</li>
+                                <li><b> Año:</b> 1998</li>
+                                <li><b> Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="diver">
+                            <a href="PDF/diver.pdf" target="_blank">
+                                <img class="img_song" src="images/diver.jpg" alt="divertido-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Alquitrán y carmín</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=da&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                            <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> medio.</li>
+                                <li><b> Artista:</b> El niño de la hipoteca</li>
+                                <li><b> Álbum:</b> </li>
+                                <li><b> Año:</b> </li>
+                                <li><b> Género:</b> Pop</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="carmin">
+                            <a href="PDF/carmin.pdf" target="_blank">
+                                <img class="img_song" src="images/carmin.jpg" alt="carmin-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Cerca de las vías</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=da&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b> Artista:</b> Fito & Fitipaldis</li>
+                                <li><b> Álbum:</b> Los sueños locos</li>
+                                <li><b> Año:</b> 2001</li>
+                                <li><b> Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="vias">
+                            <a href="PDF/vias.pdf" target="_blank">
+                                <img class="img_song" src="images/vias.jpg" alt="vias-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Con sólo una mirada</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=da&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                            <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b> Artista:</b> Georgina</li>
+                                <li><b> Álbum:</b> </li>
+                                <li><b> Año:</b> </li>
+                                <li><b> Género:</b> Pop</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="mirada"> 
+                            <a href="PDF/mirada.pdf" target="_blank">
+                                <img class="img_song" src="images/mirada.jpg" alt="mirada-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Concierto Salvaje</h3>
+                            <div>
+                                <br/>
+                                <iframe class="video_song" src="https://www.youtube.com/embed/bnpeufTv9L0" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                            <br/>
+                            <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> MClan</li>
+                                <li><b>Álbum:</b> Delta</li>
+                                <li><b>Año:</b> 2016</li>
+                                <li><b>Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="concierto">
+                            <a href="PDF/concierto.pdf" target="_blank">
+                                <img class="img_song" src="images/concierto.jpg" alt="concierto-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Corazón oxidado</h3>
+                            <div>
+                                <br />
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                            <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>                
+                                <li><b> Artista:</b> Fito & Fitipaldis</li>
+                                <li><b> Álbum:</b> Lo más lejos a tu lado</li>
+                                <li><b> Año:</b> 2003</li>
+                                <li><b> Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="oxidado">
+                            <a href="PDF/oxidado.pdf" target="_blank">
+                                <img class="img_song" src="images/oxidado.jpg" alt="oxidado-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>La calma</h3>
+                            <div>
+                                <br/>
+                                <iframe class="video_song" src="https://www.youtube.com/embed/NnZN1WCfeJE" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                            <br/>
+                            <ul class="list list-unstyled">
+                                <li><b>Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> MClan</li>
+                                <li><b>Álbum:</b> Usar y tirar</li>
+                                <li><b>Año:</b> 1999</li>
+                                <li><b>Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="calma">
+                            <a href="PDF/calma.pdf" target="_blank">
+                                <img class="img_song" src="images/calma.jpg" alt="calma-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>La revolución sexual</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> La casa azul</li>
+                                <li><b>Álbum:</b> </li>
+                                <li><b>Año:</b> </li>
+                                <li><b>Género:</b> Pop</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="revo">
+                            <a href="PDF/revo.pdf" target="_blank">
+                                <img class="img_song" src="images/revo.jpg" alt="revo-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Las calles están ardiendo</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                            <ul class="list list-unstyled">
+                                <li><b>Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> MClan</li>
+                                <li><b>Álbum:</b> Memorias de un espantapájaros</li>
+                                <li><b>Año:</b> 2008</li>
+                                <li><b>Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="calles">
+                            <a href="PDF/calles.pdf" target="_blank">
+                                <img class="img_song" src="images/calles.jpg" alt="calles-song" /> 
+                            </a>
+                        </div>                                
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Las cosas que nunca te dije</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> Mundo Chillón</li>
+                                <li><b>Álbum:</b> </li>
+                                <li><b>Año:</b> </li>
+                                <li><b>Género:</b> Pop</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="chillon">
+                            <a href="PDF/chillon.pdf" target="_blank">
+                                <img class="img_song" src="images/chillon.jpg" alt="lascosas-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Las nubes de tu pelo</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                            <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>                
+                                <li><b> Artista:</b> Fito & Fitipaldis</li>
+                                <li><b> Álbum:</b> Lo más lejos a tu lado</li>
+                                <li><b> Año:</b> 2001</li>
+                                <li><b> Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="nubes">
+                            <a href="PDF/nubes.pdf" target="_blank">
+                                <img class="img_song" src="images/nubes.jpg" alt="nubes-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Loca</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b> Artista:</b> Luz Casal</li>
+                                <li><b> Álbum:</b> </li>
+                                <li><b> Año:</b> </li>
+                                <li><b> Género:</b> Pop</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="loca">
+                            <a href="PDF/loca.pdf" target="_blank">
+                                <img class="img_song" src="images/loca.jpg" alt="loca-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Ojalá que me vaya bonito</h3>
+                            <div>
+                                <br/>
+                                <iframe class="video_song" src="https://www.youtube.com/embed/hn6GBEuaCGk" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                            <br/>
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b> Artista:</b> Chavela Vargas (Cover La Otra)</li>
+                                <li><b> Álbum:</b> </li>
+                                <li><b> Año:</b> </li>
+                                <li><b> Género:</b> </li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="vaya">
+                            <a href="PDF/vaya.pdf" target="_blank">
+                                <img class="img_song" src="images/vaya.jpg" alt="vaya-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">                            
+                            <h3>Pausa</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Nivel de dificultad:</b> fácil.</li>
+                                <li><b> Artista:</b> Izal</li>
+                                <li><b> Álbum:</b> </li>
+                                <li><b> Año:</b> </li>
+                                <li><b> Género:</b> </li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="pausa">
+                            <a href="PDF/pausa.pdf" target="_blank">
+                                <img class="img_song" src="images/pausa.jpg" alt="pausa-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Ruido</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> Joaquín Sabina</li>
+                                <li><b>Álbum:</b> </li>
+                                <li><b>Año:</b> </li>
+                                <li><b>Género:</b> </li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="ruido">
+                            <a href="PDF/ruido.pdf" target="_blank">
+                                <img class="img_song" src="images/ruido.jpg" alt="ruido-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Se dejaba llevar por ti</h3>
+                        <div>
+                            <br/>
+                            <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                            target="_blank">Video Youtube</a> 
+                        </div>
+                        <br />
+                         <ul class="list list-unstyled">
+                            <li><b> Dificultad:</b> fácil.</li>
+                            <li><b> Artista:</b>  Antonio Vega</li>
+                            <li><b> Álbum:</b>  </li>
+                            <li><b> Año:</b>  </li>
+                            <li><b> Género:</b>  </li>
+                        </ul>
+                        </div>
+                        <div class="sec4" id="vega">
+                            <a href="PDF/vega.pdf" target="_blank">
+                                <img class="img_song" src="images/vega.jpg" alt="sedejaballevar-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">                            
+                            <h3>Se quemó</h3>
+                            <div>
+                                <br/>
+                                <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=dd&flow=grid" 
+                                target="_blank">Video Youtube</a> 
+                            </div>
+                            <br />
+                             <ul class="list list-unstyled">
+                                <li><b> Nivel de dificultad:</b> Medio-Alto.</li>
+                                <li><b> Artista:</b> La Otra</li>
+                                <li><b> Álbum:</b> </li>
+                                <li><b> Año:</b> </li>
+                                <li><b> Género:</b> </li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="quemo">
+                            <a href="PDF/quemo.pdf" target="_blank">
+                                <img class="img_song" src="images/quemo.png" alt="sequemo-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Soñar contigo</h3>
+                            <div>
+                                <br/>
+                                <iframe class="video_song" src="https://www.youtube.com/embed/EEsrMUcKCDU" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            </div>
+                            <br/>
+                             <ul class="list list-unstyled">
+                                <li><b> Dificultad</b> </li>
+                                <li><b> Artista</b> Zenet</li>
+                                <li><b> Álbum</b> </li>
+                                <li><b> Año</b> </li>
+                                <li><b> Género</b> </li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="sonar">
+                            <a href="PDF/sonar.pdf" target="_blank">
+                                <img class="img_song" src="images/sonar.jpg" alt="sonarcontigo-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="row">
+                        <div class="sec3">
+                            <h3>Souvenir</h3>
+                            <div>
+                                <br/> 
+                                <iframe class="video_song" src="https://www.youtube.com/embed/nsLWnOoLYYA" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>                   
+                            </div>
+                            <br/>
+                            <ul class="list list-unstyled">
+                                <li><b>Dificultad:</b> fácil.</li>
+                                <li><b>Artista:</b> MClan</li>
+                                <li><b>Álbum:</b> Sin enchufe</li>
+                                <li><b>Año:</b> 2001</li>
+                                <li><b>Género:</b> Rock</li>
+                            </ul>
+                        </div>
+                        <div class="sec4" id="souvenir">
+                            <a href="PDF/souvenir.pdf" target="_blank">
+                                <img class="img_song" src="images/souvenir.jpg" alt="souvenir-song" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer col-md-12">
+                    <span class="redes">
+                        
+                        <a href="https://www.instagram.com/ms.hopy/?igshid=fuejswhkvxw4" target="_blank">
+                            <img src="images/ig.png" alt="instagram" title="instagram" />
+                        </a>
+                        <a href="https://www.facebook.com/mshopy-111568316912682/" target="_blank">
+                            <img src="images/fb.png" alt="facebook" title="facebook" />
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=da&flow=grid"
+                            target="_blank">
+                            <img src="images/yt.png" alt="youTube" title="youTube" />
+                        </a>
+                        <a href="mailto:missyhope82@gmail.com?&subject=Una duda..." name="mail"
+                            title="missyhope82@gmail.com">
+                            <img src="images/mail.png" />
+                        </a> 
+                        <a href="#up">
+                            <box-icon type='solid' name='hand-up'>
+                                <img src="images/arrowUp.png" alt="up" title="arriba" />
+                            </box-icon>
+                        </a>                 
+                    </span>
+                </div>
+            </div>        
+        </div>
+    </body>
+</html>

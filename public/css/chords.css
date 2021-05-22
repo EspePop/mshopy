@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px #999;
+    background-color: rgb(253, 249, 197);
+}
+
+th,
+td {
+    border: thin solid;
+    color: #006d77;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: center;
+}
+
+td {
+    font-weight: normal;
+}
+
+caption {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.img_chords{
+    margin: 20px auto;
+    width: 70%;
+}

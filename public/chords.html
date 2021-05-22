@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS ACORDES</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chords.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+    <div class="container">
+        <a id="up"></a>
+        <div class="row">
+            <div class="nav col-lg-11">
+                <nav class="navbar-expand-lg">
+                    <div class="navbar-items">
+                        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <a href="index.html"><img class="navbar-brand home" src="images/home.png" alt="Inicio" title="inicio" /></a>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="chords.html">Acordes</a>
+                                </li>                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Cancioneros
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="spanish_songs.html">Cancionero Español</a>
+                                        <a class="dropdown-item" href="fito.html">Cancionero Fito</a>
+                                        <a class="dropdown-item" href="mclan.html">Cancionero M-Clan</a>
+                                        <a class="dropdown-item" href="english_songs.html">Cancionero Inglés</a>
+                                        <a class="dropdown-item" href="adele.html">Cancionero Adele</a>
+                                        <a class="dropdown-item" href="amy.html">Cancionero Amy</a>
+                                        <a class="dropdown-item" href="infantiles.html">Cancionero Infantil</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="game.html">¿Jugamos?</a>
+                                </li>        
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Peticiones
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="mailto:missyhope82@gmail.com?&subject=Una duda..." title="missyhope82@gmail.com">
+                                            missyhope82@gmail.com
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div> 
+        <div class="header-container">
+            <div class="header navbar-expand-lg">
+                CANCIONES PARA UKELELE by <span>@ms.hopy</span>
+            </div>
+        </div>
+       
+        <div class="row"> 
+            <div id="arrowUp">
+                <a href="#up">
+                    <box-icon type='solid' name='hand-up'>
+                        <img src="images/arrowUp.png" alt="up" title="arriba" />
+                    </box-icon>
+                </a>
+            </div>  
+            <div class="sec1">                    
+                <h3>CONOCIENDO EL UKELELE</h3>
+                <p>
+                    No soy una música experta, partamos de esa base, jejeje; 
+                    <br/> os explicaré lo mínimo para empezar a tocar:
+                </p>                                   
+            </div>
+        </div>
+        <div class="row ">            
+            <div class="sec1">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#lasDoce"> 
+                            <h4>Las 12 notas musicales </h4>
+                        </a>
+                        <ul class="list-unstyled">
+                            <li>  Sostenidos y bemoles. </li>
+                            <li>  Nomenclatura americana. </li>
+                        </ul>
+                   </li>
+                    <li>
+                        <br/>
+                        <a href="#losAcordes">
+                            <h4>Los acordes</h4>
+                         </a>
+                        <ul class="list-unstyled">
+                            <li> Listado de acordes.</li>
+                            <li> Tabla de acordes.</li>
+                            <li> Los acordes uno a uno.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>                
+        </div>
+
+        <div class="row">            
+            <div class="sec2" id="lasDoce">
+                <h4>Las 12 notas musicales</h4>
+                <p>
+                    Te explicaré de la forma que lo entendí yo, espero que te sirva. 
+                    <br /> Esta explicación sirve para cualquier instrumento, aunque sólo indique la afinación
+                    <br />estándar de ukelele AECG (soprano, concierto y tenor). <br />
+                </p>
+            </div>
+            <div class="sec1">
+                <h4><br/> Sostenidos y bemoles</h4>
+                <p>
+                    Los sotenidos (#) eleva el sonido<br/> (digamos cada nota, mal explicado, jejeje)<br/> 
+                    medio tono y los bemoles (b) lo disminuyen. 
+                    <br/>Esto se ve fácilmente en un piano <br/>por las teclas blancas y negras.<br/>
+                    En el ukelele, cada traste es un semitono,<br/> es decir que va elevando medio tono el sonido 
+                    <br/>desde las clavijas hasta la caja.
+                </p>
+            </div>
+            <div class="sec2">
+                <h4><br/> Nomenclatura americana</h4>
+                <p>
+                    Para ukelele "cambiamos" el nombre de las notas, usaremos una letra para cada nota y quedan así:<br/>
+                    <b>Do = C &nbsp; Re = D &nbsp; Mi = E &nbsp; Fa = F <br/> 
+                        Sol = G &nbsp; La = A &nbsp; Si = B</b>
+                    <br/> (un truco tonto, LA es la A y Fa la F).
+                </p>
+            </div>
+        </div>
+       <div class="row ">
+            <div class="sec1" id="losAcordes">
+                <h3>Los acordes</h3>
+                <p>
+                    ¿Cómo se forma un acorde?
+                    <br/>(Os recuerdo que no he estudiado música y lo explico como lo entendí yo).<br />
+                    <br />Un acorde normalmente está formado por tres notas músicales:
+                    <br/>1ª (la nota principal) + 3ª + 5ª (respecto a la 1ª nota, en la escala musical).<br/>
+                    <br/>Es decir, si queremos hacer el acorde de C (Do) y en la escala de "toda la vida" 
+                    <br/>(Do, Re, Mi, Fa, Sol, La , Si):
+                    <br/>1ª = C + 3ª = E + 5ª = G<br/>
+                    <br /> Hay una serie de "reglas":
+                    <br/>- la "distancia" entre notas es un tono completo (los sostenidos/bemoles),
+                    <br/>-  excepto entre E y F que hay medio tono ("no existe" E# / Fb); también entre B y C ("no existe" B# / Cb).
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sec1">
+                <h5>LISTADO DE TODOS LOS ACORDES</h5>
+                <p>
+                    <a href="PDF/listaDeAcordes.pdf">
+                        <img class="img_chords" target="_blank" src="images/listaDeAcordes.png" alt="listadeacordes" title="listadeacordes"/>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sec2">
+                <h3>Los acordes uno a uno</h3>
+                <p>Porque una imagen vale más de mil palabras, vamos a ver las figuras de los acordes: </p>
+            </div>
+
+            <div class="sec2">
+                <div>
+                    <table>
+                        <caption>Tabla de acordes</caption>
+                        <tr>
+                            <th>Acordes</th>
+                            <th>Menores</th>
+                            <th>Séptimas</th>
+                            <th>Mayores</th>
+                        </tr>
+                        <tr>
+                            <td><a href="#c">C</a></td>
+                            <td>Cm</td>
+                            <td>C7</td>
+                            <td>Cmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#db">C# / Db</a></td>
+                            <td>C#m / Dbm</td>
+                            <td>C#7 / Db7</td>
+                            <td>C#maj7 / Dbmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#d">D</a></td>
+                            <td>Dm</td>
+                            <td>D7</td>
+                            <td>Dmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#eb">D# / Eb</a></td>
+                            <td>D#m / Ebm</td>
+                            <td>D#7 / Eb7</td>
+                            <td>D#maj7 / Ebmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#e">E</a></td>
+                            <td>Em</td>
+                            <td>E7</td>
+                            <td>Emaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#f">F</a></td>
+                            <td>Fm</td>
+                            <td>F7</td>
+                            <td>Fmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#gb">F# / Gb</a></td>
+                            <td>F#m / Gbm</td>
+                            <td>F#7 / Gb7</td>
+                            <td>F#naj7 / Gbmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#g">G</a></td>
+                            <td>Gm</td>
+                            <td>G7</td>
+                            <td>Gmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#ab">G# / Ab</a></td>
+                            <td>G#m / Abm</td>
+                            <td>G#7 / Ab7</td>
+                            <td>G#maj7 / Abmaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#a">A</a></td>
+                            <td>Am</td>
+                            <td>A7</td>
+                            <td>Amaj7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#bb">A# / Bb</a></td>
+                            <td>Am / Bbm</td>
+                            <td>A7 / Bb7</td>
+                            <td>A#maj7 / Bbmal7</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#b">B</a></td>
+                            <td>Bm</td>
+                            <td>B7</td>
+                            <td>Bmaj7</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="sec1" id="c">
+                <h4>El acorde C</h4>
+                <p>
+                    Es la 3ª cuerda de nuestro ukelele (contamos desde abajo).
+                    <br/>Rasga sólo esta cuerda y luego toca el acorde de C, puedes comprobar que el sonido es el mismo.
+                    <br />Su acorde se toca presionando en el tercer traste la 1ª cuerda.
+                    <br/>Las notas que lo forman: C, E, G y esta es la figura:
+                    <br><img src="images/do.png" class="img_acorde" alt="figura del acorde C" title="figura del acorde C" />
+                </p>
+            </div>
+            <div class="sec2" id="db">
+                <h4>El acorde C# o Db</h4>
+                <p>
+                    Para este acorde subimos un semitono (un traste) el acorde de C.
+                    <br/> Haremos una cejilla en el primer traste (presionamos todas las cuerdas, es difícil, no desesperes y practica mucho)
+                    <br/>y presionamos la 1ª cuerda el cuarto traste. Las notas que lo forman: C#, F, G#.
+                    <br/> Esta es la figura:
+                    <br/> <img src="images/reb.png" alt="figura del acorde Db" title="figura del acorde Db o C#" />
+                </p>
+            </div>
+            <div class="sec1" id="d">
+                <h4>El acorde D</h4>
+                <p>
+                    <img src="images/re.png" alt="figura del acorde D" title="figura del acorde D" />
+                </p>
+            </div>
+            <div class="sec2" id="eb">
+                <h4>El acorde D# / Eb</h4>
+                <p>
+                    <img src="images/mib.png" alt="figura del acorde Eb" title="figura del acorde Eb o D#" />
+                </p>
+            </div>
+            <div class="sec1" id="e">
+                <h4>El acorde E</h4>
+                <p>
+                    <img src="images/mi.png" alt="figura del acorde E" title="figura del acorde E" />
+                </p>
+            </div>
+            <div class="sec2" id="f">
+                <h4>El acorde F</h4>
+                <p>
+                    <img src="images/fa.png" alt="figura del acorde F" title="figura del acorde F" />
+                </p>
+            </div>
+            <div class="sec1" id="gb">
+                <h4>El acorde F# / Gb</h4>
+                <p>
+                    <img src="images/solb.png" alt="figura del acorde Gb" title="figura del acorde Gb o F#" />
+                </p>
+            </div>
+            <div class="sec2" id="g">
+                <h4>El acorde G</h4>
+                <p>
+                    <img src="images/sol.png" alt="figura del acorde G" title="figura del acorde G" />
+                </p>
+            </div>
+            <div class="sec1" id="ab">
+                <h4>El acorde G# / Ab</h4>
+                <p>
+                    <img src="images/lab.png" alt="figura del acorde Ab" title="figura del acorde Ab o G#" />
+                </p>
+            </div>
+            <div class="sec2" id="a">
+                <h4>El acorde A</h4>
+                <p>
+                    <img src="images/la.png" alt="figura del acorde A" title="figura del acorde A" />
+                </p>
+            </div>
+            <div class="sec1" id="bb">
+                <h4>El acorde A# / Bb</h4>
+                <p>
+                    <img src="images/sib.png" alt="figura del acorde Bb" title="figura del acorde Bb o A#" />
+                </p>
+            </div>
+            <div class="sec2" id="b">
+                <h4>El acorde B</h4>
+                <p>
+                    <img src="images/si.png" alt="figura del acorde B" title="figura del acorde B" />
+                </p>
+            </div>
+                
+        </div>       
+
+        <div class="row">
+            <div class="footer col-md-12">
+                <span class="redes">
+                    
+                    <a href="https://www.instagram.com/ms.hopy/?igshid=fuejswhkvxw4" target="_blank">
+                        <img src="images/ig.png" alt="instagram" title="instagram" />
+                    </a>
+                    <a href="https://www.facebook.com/mshopy-111568316912682/" target="_blank">
+                        <img src="images/fb.png" alt="facebook" title="facebook" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCHNqN7RT4KtpcHz5r7lR-HQ/videos?view=0&sort=da&flow=grid"
+                        target="_blank">
+                        <img src="images/yt.png" alt="youTube" title="youTube" />
+                    </a>
+                    <a href="mailto:missyhope82@gmail.com?&subject=Una duda..." name="mail"
+                        title="missyhope82@gmail.com">
+                        <img src="images/mail.png" />
+                    </a> 
+                    <a href="#up">
+                        <box-icon type='solid' name='hand-up'>
+                            <img src="images/arrowUp.png" alt="up" title="arriba" />
+                        </box-icon>
+                    </a>                 
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
